@@ -1,0 +1,107 @@
+@use '../../styles/variables' as *;
+
+.information {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: 10px;
+  padding-block-start: 80px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  column-gap: 2rem;
+
+  &__form_container {
+    grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__form_header_title {
+    @include font-style( $main-font, 500, 1.8rem, 1px, $text-color );
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__form_input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid $input-color;
+    outline: 0;
+    font-feature-settings: "tnum";
+    list-style: none;
+    background-color: rgb(240, 240, 240);
+    background-image: none;
+    @include font-style( $main-font, 300, 1.4rem, 0px, rgba(0,0,0,0.75) );
+  }
+
+  &__btn_container {
+    grid-area: 2/1/3/2;
+    display: flex;
+    width: 100%;
+    padding-block-start: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__btn {
+    display: block;
+    width: 200px;
+    padding: 6px 24px;
+    border-style: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #7e7e7ee8;
+    background-color: $green;
+    @include font-style( $main-font, 500, 1.6rem, 0px, $text-color );
+  }
+
+  &__btn:hover {
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__btn:active {
+    background-color: rgb(140, 247, 137);
+  }
+
+  &__sidebar {
+    grid-area: 1/2/3/3;
+
+    &_title {
+      padding-block-end: 5px;
+      @include font-style( $main-font, 500, 1.8rem, 1px, $text-color );
+    }
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_item_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+    }
+
+    &_item_title {
+      margin: 0;
+    }
+
+  }
+
+}

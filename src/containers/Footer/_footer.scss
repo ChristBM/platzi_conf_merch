@@ -1,0 +1,16 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  background-color: rgba(97, 192, 88, 0.253);
+  backdrop-filter: blur(20px);
+
+  &__copy {
+    @include font-style( $main-font, 400, 1.4rem, 1px, $white);
+  }
+
+}

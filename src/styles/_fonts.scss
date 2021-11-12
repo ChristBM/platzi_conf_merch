@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('./assets/fonts/open-sans-v27-latin-300.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./assets/fonts/open-sans-v27-latin-regular.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+$main-font: 'Open Sans';

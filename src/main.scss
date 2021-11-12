@@ -1,0 +1,17 @@
+/* Styles */
+@use './styles/globals';
+/* Components */
+@use './components/Product/product';
+@use './components/CheckoutItem/checkoutItem';
+/* Containers */
+@use './containers/Header/header';
+@use './containers/Products/products';
+@use './containers/Footer/footer';
+/* Layouts */
+@use './layouts/layout';
+/* Pages */
+@use './pages/Checkout/checkout';
+@use './pages/Information/information';
+@use './pages/Payment/payment';
+@use './pages/Success/success';
+@use './pages/NotFound/notFound';

@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: radial-gradient(circle, #ababab, #b3b7bb, #b7c5c9, #bdd3cf, #cddfcf);
+}
+
+body {
+  font-family: $main-font, sans-serif;
+}
+
+.not-visible {
+  display: none;
+}

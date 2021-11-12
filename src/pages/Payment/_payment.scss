@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+
+.payment {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: 10px;
+  padding-block-start: 80px;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__resum {
+    width: 300px;
+  }
+
+  &__title {
+    margin-block-end: 10px;
+    @include font-style( $main-font, 400, 1.8rem, 1px, $text-color );
+  }
+
+  &__btn{
+    width: 300px;
+  }
+
+}
+

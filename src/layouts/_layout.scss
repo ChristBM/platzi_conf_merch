@@ -1,0 +1,9 @@
+.layout {
+  display: grid;
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* grid-template-rows: auto 1fr auto; */
+  grid-template-columns: minmax(auto, 768px);
+  justify-content: center;
+}
