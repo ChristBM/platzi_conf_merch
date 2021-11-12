@@ -1,6 +1,6 @@
 # Platzi Conf Merch :convenience_store:
 
-It is a React.js SPA of a fictitious mini store. The project consists of different views and pages which are accessed using React Router routes.
+It is a React.js PWA of a MVP store. The project consists of different views and pages which are accessed using React Router routes.
 
 Integrating payments with PayPal and maps with react-map-gl and Mapbox. I also use Lottie for the animation of the 404 error page.
 
